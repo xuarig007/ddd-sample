@@ -32,7 +32,7 @@ pipeline {
     }
     stage('Quality') {
       steps {
-       withSonarQubeEnv('Sonar') {
+       withSonarQubeEnv('Sonar-ddd') {
           bat 'mvn sonar:sonar -Dsonar.projectKey="ddd-sample-master"'
         }
     }
