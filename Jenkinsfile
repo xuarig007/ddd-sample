@@ -30,12 +30,15 @@ pipeline {
 
       }
     }
-    stage('Quality') {
+
+    /*   
+   stage('Quality') {
       steps {
        withSonarQubeEnv('Sonar-ddd') {
           bat 'mvn sonar:sonar -Dsonar.projectKey="bnasslahsen_ddd-sample"'
         }
     }
   }    
+*/ 
  }
 }
