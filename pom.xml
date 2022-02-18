@@ -138,6 +138,5 @@
 		<module>ddd-sample-infrastructure</module>
 		<module>ddd-sample-application</module>
 		<module>ddd-sample-exposition</module>
-		<module>ddd-sample-batch</module>
 	</modules>
 </project>
