@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/bnasslahsen/ddd-sample.git', credentialsId: 'git-login', branch: 'master')
+        git(url: 'https://github.com/glullien/ddd-sample.git', credentialsId: 'git-login', branch: 'master')
       }
     }
     stage('Compile') {
@@ -35,7 +35,7 @@ pipeline {
    stage('Quality') {
       steps {
        withSonarQubeEnv('Sonar-ddd') {
-          bat 'mvn sonar:sonar -Dsonar.projectKey="bnasslahsen_ddd-sample"'
+          bat 'mvn sonar:sonar -Dsonar.projectKey="glullien_ddd-sample"'
         }
     }
   }    
