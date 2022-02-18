@@ -37,6 +37,6 @@ pipeline {
           bat 'mvn sonar:sonar -Dsonar.projectKey="glullien_ddd-sample"'
         }
     }
-    
+   }
  }
 }
