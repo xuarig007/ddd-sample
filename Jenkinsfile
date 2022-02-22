@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(url: 'https://github.com/glullien/ddd-sample.git', credentialsId: 'git-login', branch: 'master')
+        git(url: 'https://github.com/xuarig007/ddd-sample', credentialsId: 'git-login', branch: 'master')
       }
     }
     stage('Compile') {
@@ -33,7 +33,7 @@ pipeline {
 
    stage('Quality') {
       steps {
-       withSonarQubeEnv('Sonar') {
+       withSonarQubeEnv('SonarQ') {
           bat 'mvn sonar:sonar -Dsonar.projectKey="xuarig_jenkins-sample"'
         }
     }
