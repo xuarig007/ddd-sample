@@ -33,8 +33,8 @@ pipeline {
 
    stage('Quality') {
       steps {
-       withSonarQubeEnv('Sonar-ddd') {
-          bat 'mvn sonar:sonar -Dsonar.projectKey="glullien_ddd-sample"'
+       withSonarQubeEnv('Sonar') {
+          bat 'mvn sonar:sonar -Dsonar.projectKey="xuarig_jenkins-sample"'
         }
     }
    }
